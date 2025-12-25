@@ -14,11 +14,4 @@ BEGIN
     RANK_GENERATOR;
 END;
 /
-
 SELECT* FROM OERPS_RESULTS;
-
--- RESULT PUBLISH
-SELECT s.st_name, r.total_marks, r.percent, r.stu_grade,
-       r.res_stat, r.stu_rank
-FROM oerps_students s
-JOIN oerps_results r ON s.st_id = r.stu_id;
